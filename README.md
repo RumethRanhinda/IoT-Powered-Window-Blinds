@@ -20,7 +20,6 @@ Developed as part of the **EN1190 Engineering Design Project** at the Department
   * **Automatic Mode**: Autonomous light sensing and motor control based on target light intensity.
   * **Manual Mode**: Direct web app override using tilt position presets (Fully Open, Mostly Open, Half Closed, Mostly Closed, Fully Closed) or exact angle sliders.
 * **IoT Web Dashboard**: Built with Next.js 15, Tailwind CSS, and ShadCN UI, providing real-time data visualizer, custom control toggles, and sleep mode scheduling.
-* **AI Assistant (Google Genkit)**: Analyzes historical sensor logs and motor activation patterns to provide natural-language insights and recommendations on room lighting behavior.
 
 ---
 
@@ -37,9 +36,9 @@ The enclosure and output shaft mechanism were designed in **SOLIDWORKS** and 3D-
 * **Wall-Mountable Enclosure**: Compact 140 x 50 mm housing with dedicated cutouts for ambient light sensors, status LEDs, override buttons, and power connection.
 * **Universal Joint Drive Shaft**: Flexible connecting mechanism utilizing dual u-joints to connect the motor inside the enclosure to the tilt wand on any standard window blind, accommodating variable mounting offsets.
 
-*(Insert SOLIDWORKS Enclosure CAD image here: `docs/images/enclosure_cad.png`)*  
-*(Insert Shaft Mechanism CAD image here: `docs/images/u_joint_shaft.png`)*  
-*(Insert Final Assembled Prototype photo here: `docs/images/final_product.jpg`)*
+![Full_assembly](Images/Full_assembly.jpg)
+![Enclosure](Images/Enclosure.jpg)
+![U-joint](Images/U-joint.jpg)
 
 ---
 
@@ -54,7 +53,6 @@ lumos-web-app/
  ├── lib/                  # Utilities, Firebase Studio & Genkit setup
  └── public/               # Static assets & dashboard icons
 ```
-
 
 
 ## Getting Started
