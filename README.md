@@ -2,7 +2,6 @@
 
 [![Hardware - ESP32](https://img.shields.io/badge/Hardware-ESP32--WROOM--32E-red.svg)](https://www.espressif.com/)
 [![Framework - Next.js 15](https://img.shields.io/badge/Web-Next.js%2015-black.svg)](https://nextjs.org/)
-[![AI - Google Genkit](https://img.shields.io/badge/AI-Google%20Genkit-blue.svg)](https://firebase.google.com/docs/genkit)
 [![CAD - SOLIDWORKS](https://img.shields.io/badge/CAD-SOLIDWORKS-red.svg)](https://www.3ds.com/products-services/solidworks/)
 [![PCB - Altium Designer](https://img.shields.io/badge/PCB-Altium%20Designer-gold.svg)](https://www.altium.com/)
 
@@ -29,35 +28,8 @@ Developed as part of the **EN1190 Engineering Design Project** at the Department
 
 The overall system architecture consists of an ESP32 processing unit reading dual BH1750 sensors over I2C, driving a 28BYJ-48 stepper motor, and communicating bidirectionally with the Next.js web application over Wi-Fi.
 
-```text
-┌─────────────────────────────────────────────────────────┐
-│                      Power Supply                       │
-│                   (12V DC Adapter)                      │
-└────────────┬─────────────────────────────┬──────────────┘
-             │                             │
-             ▼                             ▼
-┌─────────────────────────┐   ┌───────────────────────────┐
-│    Voltage Regulator    │   │   28BYJ-48 Stepper Motor  │
-│      (12V to 3.3V)      │   │      (Blind Actuator)     │
-└────────────┬────────────┘   └────────────▲──────────────┘
-             │                             │
-             ▼                             │
-┌──────────────────────────────────────────┴──────────────┐
-│             ESP-WROOM-32E Microcontroller               │
-│                                                         │
-│   ├─ Reads Dual BH1750 Light Sensors (I2C)              │
-│   ├─ Debounces & Averages Lux Readings                  │
-│   ├─ Runs 30s Control Loop & Stepper Angle Logic       │
-│   └─ Serves/Syncs Data with Next.js Web App via Wi-Fi   │
-└────────────▲─────────────────────────────┬──────────────┘
-             │                             │
-             ▼                             ▼
-┌─────────────────────────┐   ┌───────────────────────────┐
-│  LED Status Indicators  │   │   LUMOS IoT Web App       │
-│ (Power, Mode, Sensor)   │   │  (Next.js 15 + Genkit AI) │
-└─────────────────────────┘   └───────────────────────────┘
+![System-Architecture](Images/System_architecture.png)
 
-```
 ## Enclosure & Mechanical Design
 
 The enclosure and output shaft mechanism were designed in **SOLIDWORKS** and 3D-printed using PLA.
