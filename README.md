@@ -1,4 +1,4 @@
-# LUMOS – IoT-Powered Automated Window Blinds\
+# LUMOS – IoT-Powered Automated Window Blinds
 
 ![Design_team_with_product](Images/Design_team_with_product.jpg)
 
@@ -19,6 +19,9 @@ Developed as part of the **EN1190 Engineering Design Project** at the Department
 * **Dual-Sensor Light Averaging**: Uses two BH1750 digital ambient light sensors to compute average lux, preventing false adjustments triggered by temporary light spikes or transient shadows.
 * **30-Second Adjustment Cycle**: Periodically evaluates indoor ambient light against user-defined room thresholds and drives the stepper motor to achieve optimal tilt.
 * **Universal Joint Drive Mechanism**: A custom-designed 3D-printed connecting shaft featuring dual universal joints (u-joints) transfers motor torque at variable angles from the wall-mounted enclosure to the blind wand.
+
+  ![Product](Images/Product.jpg)
+  
 * **Dual Operating Modes**:
   * **Automatic Mode**: Autonomous light sensing and motor control based on target light intensity.
   * **Manual Mode**: Direct web app override using tilt position presets (Fully Open, Mostly Open, Half Closed, Mostly Closed, Fully Closed) or exact angle sliders.
@@ -48,8 +51,9 @@ The custom 2-layer PCB was designed using **Altium Designer** to integrate the E
 | **Status LEDs & Switches** | Onboard diagnostic indicators (Power, Mode, Sensor State) and manual control buttons. |
 
 ### PCB Layout & Assembly
-*(Insert 2D PCB Layout image here: `docs/images/pcb_layout.png`)*  
-*(Insert 3D Render / Assembled PCB photo here: `docs/images/pcb_assembled.jpg`)*
+![PCB_Schematic](Images/PCB_Schematic.png)
+![PCB_layout](Images/PCB_layout.png)
+![PCB_3D](Images/PCB_3D.png)
 
 ---
 
@@ -105,9 +109,7 @@ lumos-web-app/
 
 ![Design_team](Images/Design_team.jpg)
 
-* **Team LUMOS** (Department of Electronic & Telecommunication Engineering, University of Moratuwa):
-
-*(From Left to Right)*  
+* **Team LUMOS** (Department of Electronic & Telecommunication Engineering, University of Moratuwa): *(From Left to Right)*  
   * Samarasinghe S.M.R.R. – Enclosure Design & Optimization, Mechanical CAD, Debugging
   * Eranga W.A.O. – Circuit & PCB Design, Microcontroller Programming, Web App Design
   * Gamage S.K. – Hardware Selection, Survey Analysis, Presentation
