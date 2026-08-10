@@ -1,4 +1,7 @@
-# LUMOS – IoT-Powered Automated Window Blinds
+# LUMOS – IoT-Powered Automated Window Blinds\
+
+![Design_team_with_product](Images/Design_team_with_product.jpg)
+
 
 [![Hardware - ESP32](https://img.shields.io/badge/Hardware-ESP32--WROOM--32E-red.svg)](https://www.espressif.com/)
 [![Framework - Next.js 15](https://img.shields.io/badge/Web-Next.js%2015-black.svg)](https://nextjs.org/)
@@ -100,8 +103,12 @@ lumos-web-app/
 
 ## Authors & Acknowledgments
 
+![Design_team](Images/Design_team.jpg)
+
 * **Team LUMOS** (Department of Electronic & Telecommunication Engineering, University of Moratuwa):
+
+*(From Left to Right)*  
+  * Samarasinghe S.M.R.R. – Enclosure Design & Optimization, Mechanical CAD, Debugging
   * Eranga W.A.O. – Circuit & PCB Design, Microcontroller Programming, Web App Design
   * Gamage S.K. – Hardware Selection, Survey Analysis, Presentation
-  * Samarasinghe S.M.R.R. – Enclosure Design & Optimization, Mechanical CAD, Debugging
   * Tharushika G.K.E. – Product Assembly, Market Analysis, Costing
