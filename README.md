@@ -29,6 +29,28 @@ The overall system architecture consists of an ESP32 processing unit reading dua
 
 ![System-Architecture](Images/System_architecture.png)
 
+---
+
+### 4. Hardware Specifications & PCB Design
+## Hardware Specifications & PCB Design
+
+The custom 2-layer PCB was designed using **Altium Designer** to integrate the ESP32 module, power conditioning components, sensor headers, and motor driving logic into a compact form factor.
+
+| Component | Function / Description |
+| :--- | :--- |
+| **ESP-WROOM-32E** | Central microcontroller handling sensing, control algorithms, and Wi-Fi connectivity. |
+| **BH1750 Sensors (x 2)** | Digital ambient light intensity sensors (Lux) connected via I2C. |
+| **28BYJ-48 Stepper Motor** | Provides high-torque, precise angular control of the window blind tilt mechanism. |
+| **Voltage Regulator Module** | Regulates 12V DC input down to 3.3V DC for the ESP32 and logic peripherals. |
+| **12V Power Pack** | External AC-to-DC power adapter providing primary system power. |
+| **Status LEDs & Switches** | Onboard diagnostic indicators (Power, Mode, Sensor State) and manual control buttons. |
+
+### PCB Layout & Assembly
+*(Insert 2D PCB Layout image here: `docs/images/pcb_layout.png`)*  
+*(Insert 3D Render / Assembled PCB photo here: `docs/images/pcb_assembled.jpg`)*
+
+---
+
 ## Enclosure & Mechanical Design
 
 The enclosure and output shaft mechanism were designed in **SOLIDWORKS** and 3D-printed using PLA.
@@ -54,6 +76,7 @@ lumos-web-app/
  └── public/               # Static assets & dashboard icons
 ```
 
+---
 
 ## Getting Started
 
@@ -65,11 +88,8 @@ lumos-web-app/
    * `WiFi` / `HTTPClient`
 3. Select board **ESP32 Dev Module** and upload the firmware to the ESP32 chip.
 
-### Web Application Setup
-1. Navigate to the web application directory:
-   ```bash
-   cd web-app
-   ```
+---
+
 
 ## Future Improvements
 
