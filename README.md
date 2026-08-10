@@ -31,7 +31,6 @@ The overall system architecture consists of an ESP32 processing unit reading dua
 
 ---
 
-### 4. Hardware Specifications & PCB Design
 ## Hardware Specifications & PCB Design
 
 The custom 2-layer PCB was designed using **Altium Designer** to integrate the ESP32 module, power conditioning components, sensor headers, and motor driving logic into a compact form factor.
@@ -98,3 +97,11 @@ lumos-web-app/
 * **Expanded Blind Mechanism Compatibility**: Adapting mechanical adapters to support vertical blinds, roller shades, and curtain tracks.
 
 ---
+
+## Authors & Acknowledgments
+
+* **Team LUMOS** (Department of Electronic & Telecommunication Engineering, University of Moratuwa):
+  * Eranga W.A.O. – Circuit & PCB Design, Microcontroller Programming, Web App Design
+  * Gamage S.K. – Hardware Selection, Survey Analysis, Presentation
+  * Samarasinghe S.M.R.R. – Enclosure Design & Optimization, Mechanical CAD, Debugging
+  * Tharushika G.K.E. – Product Assembly, Market Analysis, Costing
